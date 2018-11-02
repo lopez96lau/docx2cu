@@ -12,9 +12,7 @@
 - Ing. Gramajo, Guadalupe
 
 ###### Resumen del proyecto:
-Hoy en día, es normal ver aplicaciones informáticas que hacen uso de la inteligencia artificial para automatizar ciertas tareas que requieren la supervisión de una persona. En el modelo planteado, se desarrolla una herramienta en Python que utiliza el procesamiento del lenguaje natural como estandarte, para la detección de requermientos funcionales en enunciados alojados en archivos de tipo .DOCX.
-
-Uno de los enfoques que se busca en el proyecto, es orientar dichos requerimientos en el diseño de Diagramas de Casos de Uso, los cuales representan a las relaciones entre los actores y las accciones que se deben desarrollar en tales requerimientos, por lo que nuestro principal desafío es la obtención de de información valiosa para nuestro objetivo, mediante técnicas como NLP y machine learning.
+Las técnicas de modelado en Ingeniería de Software permiten representar un sistema mediante notaciones gráficas, lo que reduce el nivel de abstracción y mejora su comprensión. Cada modelo presenta una perspectiva diferente del sistema a desarrollar. Uno de los más utilizados es el diagrama de casos de uso. Éstos son utilizados para describir las interacciones entre el sistema y su entorno, identificando los actores principales, relaciones y escenarios. La generación de este modelo es fundamental para la fase de diseño del software y requiere de una correcta comprensión del dominio donde estará inmerso el sistema y de las declaraciones de requisitos obtenidas de los stakeholders. Considerando este contexto, en este trabajo se propone el desarrollo de una herramienta para derivar de forma semi-automática los elementos que conforman los diagramas de caso de uso, a partir del análisis de las declaraciones expresadas en lenguaje natural, obtenidas de las tareas de educción, aplicando de técnicas de minería de textos. Esta propuesta tiene por objetivo ser implementada a futuro como un microservicio de un sistema recomendador, e integrada al conjunto de funcionalidades ofrecidas.
 
 ### Herramientas:
 - Python 3.x (https://www.python.org/downloads/)
