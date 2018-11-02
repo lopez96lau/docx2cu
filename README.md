@@ -1,21 +1,15 @@
-# Modelo de una herramienta para la detección de requerimientos y casos de uso
+# Un Enfoque semi-automático para generar Diagramas de Casos de Uso aplicando Técnicas de Minería de Textos
 ### Proyecto de Investigación de Beca I+D - Año 2018
 #### Universidad Tecnológica Nacional - Facultad Regional Santa Fe - Departamento de Ingeniería en Sistemas de Información
 
 ###### Docentes a cargo:
 - Dra. Gutíerrez, María de los Milagros
 - Dra. Ballejos, Luciana
-
-###### Becarios:
-- López, Laureano Gonzalo (lopez96lau@gmail.com)
-- Fleitas, Tomás Andrés
-- Olivieri, Gustavo
-- Roa, Santiago
-
-###### Colaboradores:
-- Ing. Domínguez, Martín
-- Ing. Gramajo, Guadalupe
 - Dra. Ale, Mariel Alejandra
+
+###### Investigadores:
+- López, Laureano Gonzalo
+- Ing. Gramajo, Guadalupe
 
 ###### Resumen del proyecto:
 Hoy en día, es normal ver aplicaciones informáticas que hacen uso de la inteligencia artificial para automatizar ciertas tareas que requieren la supervisión de una persona. En el modelo planteado, se desarrolla una herramienta en Python que utiliza el procesamiento del lenguaje natural como estandarte, para la detección de requermientos funcionales en enunciados alojados en archivos de tipo .DOCX.
@@ -24,36 +18,23 @@ Uno de los enfoques que se busca en el proyecto, es orientar dichos requerimient
 
 ### Herramientas:
 - Python 3.x (https://www.python.org/downloads/)
+- spaCy (https://spacy.io)
+- python-docx (https://python-docx.readthedocs.io/en/latest/)
 
-Una vez instalado, se deberán descargar los siguientes módulos:
+Una vez instalado Python, se deberán descargar los módulos:
 
-#### NLTK y algunos corpus útiles
-*Natural Language Tool Kit*, biblioteca más utilizada para procesamiento de lenguaje natural. Se descarga e instala desde la consola de Python.
+#### spaCy y corpus en español
+Biblioteca muy potente y robusta utilizada para procesamiento de lenguaje natural, que entre sus corpus posee uno en español basado en AnCora. Se descarga e instala desde la consola de Python.
 ```python
-$ python
->>> pip install nltk
->>> import nltk
->>> nltk.download('wordnet')
->>> nltk.download('stopwords')
->>> nltk.download('omw')
->>> from nltk.corpus import wordnet as wn
->>> wn.synsets('bank')[0].lemma_names('spa')
+$ pip install spacy
+$ python -m spacy download es_core_web_sm
 ```
 
 #### Python-Docx
 Permite la extracción del texto guardado en archivos .DOCX. Se descarga e instala desde la consola de Python.
 ```python
-$ python
->>> pip install python-docx
+$ pip install python-docx
 ```
-
-#### Stanford POSTagger
-Corpus útil que permite clasificar sintácticamente a las palabras dentro de un texto. Deben descargarse dos archivos comprimidos:
-  - Paquete básico del corpus:
-  - Paquete en español:
-  
-Una vez que se haya descargado y descomprimido el zip, hay dos archivos que deben localizarse. El primero está directamente dentro de la carpeta raíz, se llama `stanford-postagger.jar`. El segundo, está dentro de la carpeta `models`, y su nombre es `spanish.tagger`. Para ambos archivos se va a necesitar la ruta completa para usarlos con Python y NLTK.
-
 
 Ahora que se tienen todas las herramientas necesarias instaladas, podrá proceder a ejecutar el script.
 
